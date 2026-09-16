@@ -1,0 +1,9 @@
+schema_version: "formal-1.0"
+experiment: "A_ablation"
+instance_pool: "Formal-V1-G01-G05-J9"
+task_counts: [30, 100, 200]
+geometry_seeds: [1, 2, 3, 4, 5]
+algorithm_seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+variants: [A0_full, A1_no_adaptive, A2_no_problem_specific, A3_basic]
+budget: {type: "wall_time", wall_time_sec: 300}
+

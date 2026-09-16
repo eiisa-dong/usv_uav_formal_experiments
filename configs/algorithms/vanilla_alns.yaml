@@ -1,0 +1,14 @@
+# Compatibility alias for the B5 VanillaALNS implementation.
+schema_version: "2.1"
+name: "basic_alns"
+initial_temperature_fraction: 0.05
+cooling_rate: 0.995
+reaction_factor: 0.10
+segment_length: 50
+removal_fraction_min: 0.10
+removal_fraction_max: 0.30
+reward_global_best: 33.0
+reward_improved: 13.0
+reward_accepted: 9.0
+local_search_interval: 0
+

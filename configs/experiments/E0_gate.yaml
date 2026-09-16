@@ -1,0 +1,15 @@
+schema_version: "formal-1.0"
+experiment: "E0_gate"
+task_counts: [30, 100, 200]
+geometry_seeds: [1, 2, 3, 4, 5]
+resources: {usv_count: 1, uav_count: 6, charger_count: 2}
+checks:
+  - manifest_hashes_valid
+  - frozen_resources_match
+  - every_task_has_sortie
+  - constructive_solution_feasible
+  - decoder_repeatability
+  - registry_output_schema
+  - seed_and_budget_contract
+  - results_are_non_overwriting
+

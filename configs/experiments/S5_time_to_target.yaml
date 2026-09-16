@@ -1,0 +1,8 @@
+schema_version: "formal-1.0"
+experiment: "S5_time_to_target"
+source_experiment: "S4_long_run"
+target_file: "results/processed/time_to_target/targets.json"
+target_policy: "best_psalns_per_instance"
+missing_target_policy: "fail"
+algorithms: [psalns, alns, reference_alns, ga, pso]
+

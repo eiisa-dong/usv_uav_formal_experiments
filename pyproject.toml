@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usv-uav-formal-experiments"
+version = "1.0.0"
+description = "Immutable Formal-V1 evidence pipeline for single-USV multi-UAV inspection scheduling"
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+  "numpy==2.3.5",
+  "numba==0.62.1",
+  "PyYAML==6.0.3",
+  "scipy==1.16.3",
+  "shapely==2.1.2",
+  "pyproj==3.7.2",
+  "rasterio==1.5.1",
+  "pandas==2.3.3",
+  "pyarrow==21.0.0",
+  "matplotlib==3.10.6",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2", "pytest-cov==7.0.0"]
+exact = ["gurobipy==13.0.2"]
+
+[project.scripts]
+usv-uav-formal = "usv_uav.experiments.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+

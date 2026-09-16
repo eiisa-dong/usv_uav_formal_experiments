@@ -1,0 +1,20 @@
+schema_version: "2.1"
+decoder_semantics_hash: "b6300a23499fee3a64d163ce41c7caa6fc17a9a48c8253f0fc8abacceef4a14b"
+
+inspection:
+  levels:
+    1: {service_min: 6.0, share: 0.50}
+    2: {service_min: 15.0, share: 0.30}
+    3: {service_min: 25.0, share: 0.20}
+  max_tasks_per_sortie: 3
+  mandatory_tasks: true
+
+charging:
+  effective_rate_wh_min: 12.284
+  policy: "fcfs_minimum_required"
+  non_idling: true
+  setup_time_min: 0.0
+  transfer_to_charger_min: 0.0
+  final_full_charge: false
+  charging_during_sailing: true
+

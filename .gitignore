@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Formal raw evidence is immutable and normally stored outside Git.
+results/raw/**
+!results/raw/.gitkeep
+diagnostics/trajectories/**
+!diagnostics/trajectories/.gitkeep
+
+# Atomic writer staging directories.
+*.building/
+

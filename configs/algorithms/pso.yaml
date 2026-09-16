@@ -1,0 +1,9 @@
+schema_version: "formal-1.0"
+name: "discrete_pso"
+swarm_size: 24
+inertia_probability: 0.35
+cognitive_probability: 0.35
+social_probability: 0.55
+mutation_probability: 0.15
+elite_particles: 1
+

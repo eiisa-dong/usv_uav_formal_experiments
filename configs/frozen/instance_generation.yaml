@@ -1,0 +1,32 @@
+schema_version: "formal-1.0"
+pool_id: "Formal-V1-G01-G05-J9"
+task_counts: [10, 20, 30, 50, 75, 100, 125, 150, 200]
+geometry_seeds: [1, 2, 3, 4, 5]
+algorithm_seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+expected_instance_count: 45
+layout:
+  crs: "EPSG:32630"
+  coordinate_units: "km"
+  physical_turbine_count: 200
+  level_seed_offset: 10000
+  task_order_seed_offset: 20000
+navigation:
+  minimum_water_depth_m: 1.0
+  bathymetry_positive_down: false
+  turbine_buffer_m: 50.0
+  wreck_obstruction_buffer_m: 50.0
+  land_buffer_m: 0.0
+  use_land: true
+  use_shallow_water: true
+  use_turbine_buffers: true
+  use_wreck_obstruction_buffers: true
+  candidate_grid_spacing_nn_factor: 0.5
+  candidate_bounds_margin_nn_factor: 1.0
+  coordinate_dedup_tolerance_m: 0.01
+  visibility_simplify_m: 5.0
+  visibility_clip_margin_km: 2.0
+tsp:
+  formal_solver: "gurobi_exact"
+  time_limit_sec: 300.0
+immutable_after_catalogue: true
+

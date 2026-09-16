@@ -1,0 +1,28 @@
+# Formal-V1 lock generated from the validated B5 environment on 2026-09-16.
+# Install the project itself with: python -m pip install -e .[test,exact]
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.60.1
+gurobipy==13.0.2
+kiwisolver==1.4.9
+llvmlite==0.45.1
+matplotlib==3.10.6
+numba==0.62.1
+numpy==2.3.5
+packaging==25.0
+pandas==2.3.3
+pillow==12.0.0
+pyarrow==21.0.0
+pyparsing==3.2.5
+pyproj==3.7.2
+pytest==8.4.2
+pytest-cov==7.0.0
+python-dateutil==2.9.0.post0
+pytz==2025.2
+PyYAML==6.0.3
+rasterio==1.5.1
+scipy==1.16.3
+shapely==2.1.2
+six==1.17.0
+tzdata==2025.2
+

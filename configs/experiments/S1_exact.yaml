@@ -1,0 +1,9 @@
+schema_version: "formal-1.0"
+experiment: "S1_exact"
+task_counts: [10, 20, 30]
+geometry_seeds: [1, 2, 3, 4, 5]
+method: "scheduling_lower_bound_milp"
+time_limit_sec: 3600
+claim_optimal_solution: false
+report: [upper_bound, lower_bound, certified_gap, solver_status]
+

@@ -1,0 +1,34 @@
+schema_version: "2.1"
+name: "proposed_alns"
+initial_temperature_fraction: 0.025
+cooling_rate: 0.995
+reaction_factor: 0.1
+segment_length: 25
+removal_fraction_min: 0.1
+removal_fraction_max: 0.25
+reward_global_best: 33.0
+reward_improved: 13.0
+reward_accepted: 9.0
+local_search_interval: 20
+recovery_top_m: 4
+recovery_same_quota: 2
+recovery_diff_quota: 2
+multiscale_destroy:
+  preserve_legacy_up_to_j: 30
+  micro_min_tasks: 3
+  micro_max_tasks: 6
+  medium_after_stagnation: 20
+  medium_min_tasks: 7
+  medium_max_tasks: 12
+  macro_every_stagnation: 50
+search_cadence:
+  reference_horizon_sec: 300.0
+  temperature_ratio_by_task_count:
+    90: 1.2587703000043933e-12
+    150: 0.040848359296122246
+    200: 0.2892103616617183
+  local_search_interval_sec_by_task_count:
+    90: 1.0937098974683446
+    150: 9.419743289729418
+    200: 24.391569884256512
+
